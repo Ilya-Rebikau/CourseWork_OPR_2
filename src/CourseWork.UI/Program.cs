@@ -1,4 +1,4 @@
-using CourseWork.BLL.Configuration;
+using CourseWork.UI.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 

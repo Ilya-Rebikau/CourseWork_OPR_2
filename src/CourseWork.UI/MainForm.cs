@@ -23,6 +23,7 @@ namespace CourseWork.UI
         {
             try
             {
+                richTextBoxResult.Clear();
                 if (openFileDialog.ShowDialog() == DialogResult.Cancel)
                 {
                     return;
@@ -36,14 +37,14 @@ namespace CourseWork.UI
                 }
 
                 var result = GetResult(fileNameWithPath, triesCount);
-                richTextBoxResult.Text = "Решение задачи: (поменять строку эту?)\n";
-                richTextBoxResult.Text += $"Путь:\n{result.Path.StringPath}\n(поменять строку эту?)";
-                richTextBoxResult.Text += $"Длина пути: {result.ContourLength} (поменять строку эту?)";
+                richTextBoxResult.Text += $"Путь:\n{result.Path.StringPath}\n";
+                richTextBoxResult.Text += $"Длина пути: {result.ContourLength}";
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
+
     }
 }

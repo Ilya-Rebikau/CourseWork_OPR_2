@@ -1,7 +1,8 @@
-﻿using CourseWork.UI;
+﻿using CourseWork.BLL.Configuration;
+using CourseWork.UI;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CourseWork.BLL.Configuration
+namespace CourseWork.UI.Configuration
 {
     public static class ConfigureUiServices
     {
